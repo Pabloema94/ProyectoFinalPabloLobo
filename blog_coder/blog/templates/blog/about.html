@@ -1,0 +1,35 @@
+{% extends 'blog/base.html' %}
+
+{% block header %}
+
+{% load static %}
+
+<header class="masthead" style="background-image: url({% static 'blog/assets/img/about-bg.jpg' %})">
+    <div class="container position-relative px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-md-10 col-lg-8 col-xl-7">
+                <div class="page-heading">
+                    <h1>{{title}}</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+{% endblock header %}
+
+{% block main_content %}
+
+<article class="mb-4">
+    <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-md-10 col-lg-8 col-xl-7">
+                <p> Soy Pablo Emanuel Lobo, tengo 28 años, estudio ingeniería en Sistemas de Información en la <a href="https://www.utn.edu.ar/">UTN</a></p>
+                <p> Se realizo esta Web estilo blog, la cual fue creada con los conocimientos obtenidos en el curso de programación en Python de <a href="https://www.coderhouse.com/">Coderhouse.</a> Las consignas de dicho proyecto se encuentran en:  <a href="https://docs.google.com/presentation/d/1WtDjdQxIQQFAFnQ3DpzX3YoAwCrFXEbEPUiXWimJ3aU/preview?slide=id.p3">acá.</a></p>
+                <p> Para su implementación, se utilizó además el framework de <a href="https://www.djangoproject.com/">django</a> y plantillas de <a href="https://getbootstrap.com/">Bootstrap.</a></p>
+            </div>
+        </div>
+    </div>
+</article>
+
+{% endblock main_content %}
